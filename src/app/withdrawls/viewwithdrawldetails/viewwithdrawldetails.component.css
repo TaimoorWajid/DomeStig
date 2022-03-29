@@ -1,0 +1,9 @@
+input{
+    background: #F9F9F9;
+}
+.form-control {
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    background: #F9F9F9;
+    border-radius: 5px;
+}

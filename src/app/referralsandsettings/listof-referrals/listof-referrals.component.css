@@ -1,0 +1,183 @@
+
+  
+  .dashboard-card {
+    position:inherit;
+    padding: 30px 30px 30px 30px ;
+  }
+  
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  
+  .dashboard-card-content {
+    text-align: center;
+  }
+  
+  .tdServices{
+    width: auto;
+  }
+  
+  .editBtn{
+    height: 25px;
+    width: 40px;
+    text-align: center;
+    background-color: #61963a  ;
+    text-decoration: none;
+    border:none;
+    color: white;
+  }
+  
+  .deleteBtn{
+    height: 25px;
+    width: 40px;
+    text-align: center;
+    background-color: f4f8f1;
+    text-decoration: none;
+    border:none;
+    color: #b7bab5
+    ;
+    margin-left: 2px;
+  }
+  .addBtn{
+    float:right;
+    height: 30px;
+    width: auto;
+    text-align: center;
+    background-color: #61963a  ;
+    text-decoration: none;
+    border:none;
+    color: white;
+    padding-right:20px;
+    padding-left: 20px;
+    font-size: 14px;
+    
+  }
+  .searchPromo{
+    float: right;
+    height: 35px;
+    border: 1px solid #959595 ;
+    border-radius: 3px;
+    background-color: #F9F9F9;
+    margin: 0px 0px 0px 15px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    position: static;
+    width: auto;
+    height: 40px;
+}
+
+.mainbuttons{
+
+    width: auto;
+    border-radius: 3px;
+    background-color: #F9F9F9;
+    margin: 0px 15px 0px 0px;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    position: static;
+    width: 115px;
+    height: 40px;
+  }
+
+  .mainbuttons:focus{
+      background-color: #61963a;
+      color: white;
+  }
+
+  .paginationdiv{
+    float: right;
+  }
+  
+  .custompaginationsettings /deep/ .ngx-pagination .current{
+    background: #61963a;
+  
+  }
+
+  tr{
+    height: 56px;
+  width: 1572px;
+  border-radius: 0px;  
+  }
+  td {
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  left: 13.68%;
+  right: 68.64%;
+  top: 29.09%;
+  bottom: 27.27%;
+  
+  font-family: 'Poppins' sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #444444;
+  }
+    
+  th{
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 17px;
+  height: 26px;
+  left: 318px;
+  top: 271px;
+  
+  font-family: 'Poppins' sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 26px;    
+  color: #222222
+    }
+    .custompaginationsettings /deep/ .ngx-pagination .current{
+      background: #61963a;
+      box-shadow: 0px 6px 20px -3px rgb(0 0 0 / 10%);
+      border-radius: 3px;
+      margin-right: 10px;
+      padding: 10px 15px 10px 15px;
+      color: #fff;
+      cursor: default;
+    
+    }
+    
+    .custompaginationsettings /deep/ .ngx-pagination a {
+      padding: 10px 15px 10px 15px!important;
+      text-decoration: none!important;
+    }
+    .custompaginationsettings /deep/ .ngx-pagination li {
+      background: #fff;
+      box-shadow: 0px 6px 20px -3px rgb(0 0 0 / 10%);
+      border-radius: 3px;
+      margin-right: 10px;
+      padding: 0px;
+      color: #000;
+      cursor: default;
+    }
+    .custompaginationsettings /deep/ .ngx-pagination .pagination-previous.disabled::before {
+      background: #fff;
+      box-shadow: 0px 6px 20px -3px rgb(0 0 0 / 10%);
+      border-radius: 3px;
+      margin-right: 0px;
+      padding: 10px 15px 10px 15px;
+      color: #000;
+      cursor: default;
+    }
+    .custompaginationsettings /deep/ .ngx-pagination .pagination-next.disabled::after {
+      background: #fff;
+      box-shadow: 0px 6px 20px -3px rgb(0 0 0 / 10%);
+      border-radius: 3px;
+      margin-left: 0px;
+      padding: 10px 15px 10px 15px;
+      color: #000;
+      cursor: default;
+    }
+    
+    .custompaginationsettings /deep/ .ngx-pagination .pagination-previous a::before, .custompaginationsettings /deep/ .ngx-pagination .pagination-next a::after {
+      margin: 0px;
+    }
+     

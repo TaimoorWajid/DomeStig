@@ -1,0 +1,61 @@
+<div class="grid-container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <span class="heading">All Withdrawls</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <button routerLink="/listofwithdrawls/withdrawlssettings" class="addBtn"><i class="fa fa-gear"></i>&nbsp; WithDrawls Settings</button>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+            <button class="mainbuttons">All</button>
+            <button class="mainbuttons">Pending</button>
+            <button class="mainbuttons">Completed</button>
+            <button class="mainbuttons">Cancelled</button>
+            <button class="mainbuttons">Replaced</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <input class="form-control searchPromo" placeholder="Search from the list" type="text" [(ngModel)]="term">
+        </div>
+    </div>
+    <br>
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Summary</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let booking of WithDrawls |filter:term | paginate:{itemsPerPage:10,currentPage:p}">
+                    <td>{{booking.ID}}</td>
+                    <td style="width: auto;">{{booking.Summary}}</td>
+                    <td>{{booking.Amount}}</td>
+                    <td>{{booking.Date}}</td>
+                    <td>{{booking.Status}}</td>
+                    <td>
+                        <button class="editBtn"><i class="fa fa-edit"></i></button>&nbsp;
+                        <button class="deleteBtn"><img src="../../assets/Images/Vector.png" alt=""></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="paginationdiv">
+            <pagination-controls class="custompaginationsettings" (pageChange)="p = $event" previousLabel=""
+            nextLabel=""> 
+    
+            </pagination-controls>
+        </div>
+        
+    </div>
+
+</div>

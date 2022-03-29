@@ -1,0 +1,11 @@
+.saveChangesBtn{
+    float: right;
+}
+.form-control {
+    background: #FFFFFF;
+    /* Extra color 1 */
+    
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

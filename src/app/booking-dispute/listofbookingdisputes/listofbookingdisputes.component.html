@@ -1,0 +1,69 @@
+<div class="grid-container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <span class="heading">Booking Dispute</span>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <button class="addBtn">Dispute reasons</button>
+        </div>
+
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8">
+            <button class="mainbuttons">All</button>
+            <button class="mainbuttons">Workers</button>
+            <button class="mainbuttons">Customers</button>
+        </div>
+        <div class="col-md-4">
+            <input class="form-control searchPromo" placeholder="Search from the list" type="text" [(ngModel)]="term">
+
+        </div>
+
+    </div>
+    <br>
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Selected Reason</th>
+                    <th>User Name</th>
+                    <th>User Role</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let booking of Bookings |filter:term | paginate:{itemsPerPage:10,currentPage:p}">
+                    <td>{{booking.ID}}</td>
+                    <td style="width: auto;">{{booking.SelectedReason}}</td>
+                    <td>{{booking.Username}}</td>
+                    <td>{{booking.Userrole}}</td>
+                    <td>{{booking.Amount}}</td>
+                    <td>{{booking.Date}}</td>
+                    <td>{{booking.Status}}</td>
+                    <td>
+                        <button class="editBtn"><i class="fa fa-edit"></i></button>
+                        <button class="deleteBtn"><i class="fa fa-close"></i></button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="paginationdiv">
+            <pagination-controls class="custompaginationsettings" (pageChange)="p = $event" previousLabel=""
+            nextLabel=""> 
+    
+            </pagination-controls>
+        </div>
+        
+    </div>
+
+</div>

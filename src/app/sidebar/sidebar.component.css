@@ -1,0 +1,83 @@
+.matnavlist {
+  /* Dashboard */
+position: static;
+left: 28%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height, or 156% */
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 15px 12px;
+}
+
+
+.logo {
+  /* Domesting logo */
+
+
+/* position: absolute; */
+height: 65.18119049072266px;
+    width: 157.0000457763672px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 0px;
+}
+
+.sidenav-container {
+  height: 100%;
+  
+}
+
+.sidenav {
+
+/* position: absolute; */
+width: 253px;
+height: auto;
+left: 0px;
+top: 0px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+  background-color: #ffffff  ;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.matToolbar{
+  background-color: #ffffff;
+}
+
+.navBackBtn{
+  text-decoration: none;
+  padding-left: 5px;
+  color: #9a9b99;
+  font-size: 15px;
+}
+
+.active-link{
+color: #61963a;
+border-right:2px solid #61963a;
+}
+
+i{
+font-size: 20px;  
+padding-right: 2px;
+}
+

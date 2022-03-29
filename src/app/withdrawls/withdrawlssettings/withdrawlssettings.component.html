@@ -1,0 +1,47 @@
+<div class="grid-container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <span class="heading">WithDrawl Settings</span>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <button class="addBtn">Add new option</button>
+        </div>
+
+    </div>
+    <br>
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Method</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let reason of Reasons |filter:term | paginate:{itemsPerPage:10,currentPage:p}">
+                    <td>{{reason.No}}</td>
+                    <td style="width: auto;">{{reason.Method}}</td>
+                    <td style="width: auto;">{{reason.Status}}</td>
+                    <td>
+                        <button class="editBtn"><i class="fa fa-edit"></i></button>
+                        <button class="deleteBtn"><i class="fa fa-close"></i></button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="paginationdiv">
+            <pagination-controls class="custompaginationsettings" (pageChange)="p = $event" previousLabel=""
+            nextLabel=""> 
+    
+            </pagination-controls>
+        </div>
+        
+    </div>
+
+</div>

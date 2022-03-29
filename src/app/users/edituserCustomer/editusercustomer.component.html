@@ -1,0 +1,126 @@
+<div class="grid-container">
+    <span class="heading" for="">
+        Edit user details
+    </span>
+    <br>
+    <br>
+    <form action="">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">ID*</label>
+                <input class="form-control" type="text" disabled placeholder="#12123">
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Name*</label>
+                <input class="form-control" type="text">
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Email*</label>
+                <input class="form-control" type="text">
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Phone*</label>
+                <input class="form-control" type="text">
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Country*</label>
+                <input class="form-control" type="text" disabled>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Location*</label>
+                <input class="form-control" type="text">
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Join Date*</label>
+                <input class="form-control" type="text">
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Wallet Balance*</label>
+                <input class="form-control" type="text">
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Used Balance*</label>
+                <input class="form-control" type="text" disabled>
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Total Referrals*</label>
+                <input class="form-control" type="text" disabled>
+
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Referral Earnings*</label>
+                <input class="form-control" type="text">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <label class="formlabels" for="">Profile Picture*</label>
+            <div class="col-md-5 col-lg-5 col-sm-5 col-5">
+                <img class="upImage" src={{url}} (error)="onImgError($event)" alt="">&nbsp;
+                <input class="imageUpBtn" (change)="onFileChanged($event)" type="file">
+            </div>
+        </div>
+        <br>
+        <span class="heading" for="">
+            Change Password
+        </span>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Change Password*</label>
+                <input class="form-control" type="password">
+
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Confirm Password*</label>
+                <input class="form-control" type="password">
+
+            </div>
+        </div>
+        <br>
+        <span class="heading" for="">
+            Edit Status
+        </span>
+        <br>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                <label class="formlabels" for="">Change Status*</label>
+                <select class="form-control" name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Active</option>
+                    <option value="">In Active</option>
+
+                </select>
+
+            </div>
+        </div>
+        <br>
+        <button class="saveChangesBtn">Save Changes</button>
+
+    </form>
+</div>
+

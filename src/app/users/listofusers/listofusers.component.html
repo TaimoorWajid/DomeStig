@@ -1,0 +1,76 @@
+<div class="grid-container">
+    <div class="row users-top-bar">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-3">
+            <span class="heading">Users</span>
+        </div>
+       
+        <div class="col-lg-9 col-md-9 col-sm-6 col-9">
+            <button class="addBtn">Add new User</button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <button class="mainbuttons">All</button>
+            <button class="mainbuttons">Workers</button>
+            <button class="mainbuttons">Customers</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+            <!-- <select class="form-control"><i class="fa fa-angle-down"></i>
+                <option value="">Status</option>
+            </select>
+            <select class="form-control">
+                <option value="">Service</option>
+            </select> -->
+            <button class="statusserviceBtn">Status <i class="fa fa-angle-down"></i></button>
+            <button class="statusserviceBtn"> Service <i class="fa fa-angle-down"></i></button>
+            <input class="form-control searchSerhisory" type="text" placeholder="Search..."
+                [(ngModel)]="term">
+        </div>
+
+    </div>
+    <br>
+
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone No</th>
+                    <th>Join Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of Users |filter:term | paginate: { itemsPerPage: 10, currentPage: p }">
+                    <td>{{user.ID}}</td>
+                    <td>{{user.Name}}</td>
+                    <td>{{user.Email}}</td>
+                    <td>{{user.PhoneNo}}</td>
+                    <td>{{user.JoinDate}}</td>
+                    <td>{{user.Status}}</td>
+
+                    <td>
+                        <button class="editBtn" routerLink="/listofUsers/addusers"><i class="fa fa-edit"></i></button>&nbsp;
+                        <button class="deleteBtn" (click)="deleteItem(user)"><img src="../../assets/Images/Vector.png" alt=""></button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="paginationdiv">
+            <pagination-controls class="custompaginationsettings" (pageChange)="p = $event" previousLabel=""
+                nextLabel="">
+
+            </pagination-controls>
+        </div>
+
+
+    </div>
+
+</div>

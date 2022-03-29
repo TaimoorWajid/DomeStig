@@ -1,0 +1,101 @@
+
+  
+  .dashboard-card {
+    position:inherit;
+    padding: 30px 30px 30px 30px ;
+  }
+  
+  .more-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  
+  .dashboard-card-content {
+    text-align: center;
+  }
+  
+  
+  td {
+    padding-left: 25px;
+    width: 160px;
+    vertical-align: middle;
+  }
+  
+  th{
+    height: 25px;
+    padding-left: 25px;
+    
+  }
+  
+  .tdServices{
+    width: auto;
+  }
+  
+  .editBtn{
+    height: 25px;
+    width: 40px;
+    text-align: center;
+    background-color: #61963a  ;
+    text-decoration: none;
+    border:none;
+    color: white;
+  }
+  
+  .deleteBtn{
+    height: 25px;
+    width: 40px;
+    text-align: center;
+    background-color: f4f8f1;
+    text-decoration: none;
+    border:none;
+    color: #b7bab5
+    ;
+    margin-left: 2px;
+  }
+  .addBtn{
+    float:right;
+    height: 30px;
+    width: auto;
+    text-align: center;
+    background-color: #61963a  ;
+    text-decoration: none;
+    border:none;
+    color: white;
+    padding-right:20px;
+    padding-left: 20px;
+    
+  }
+  .searchPromo{
+      width: 300px;
+      float:right ;
+      height: 35px;
+  }
+
+  .mainbuttons{
+    height: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration:dashed;
+    border:1px solid #959595;
+    background-color: #f9f9f9;
+    color: #959595;
+    margin-left: 5px;
+    padding-right:20px;
+    padding-left: 20px;
+    border-radius: 3px;
+  }
+
+  .mainbuttons:focus{
+      background-color: #61963a;
+      color: white;
+  }
+
+  .paginationdiv{
+    float: right;
+  }
+  
+  .custompaginationsettings /deep/ .ngx-pagination .current{
+    background: #61963a;
+  
+  }

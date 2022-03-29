@@ -1,0 +1,51 @@
+<div class="grid-container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <span class="heading">Services</span>
+  
+      </div>
+      <br>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <button class="addBtn">Add New</button>
+      </div>
+  
+    </div>
+    <br>
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Services</th>
+            <th>Class</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+  
+        </thead>
+        <tbody>
+          <tr *ngFor="let std of students |paginate:{itemsPerPage:10,currentPage:p}">
+            <td>{{std.Name}}</td>
+            <td>{{std.Gender}}</td>
+            <td class="tdServices">{{std.Services}}</td>
+            <td>{{std.Class}}</td>
+            <td>{{std.Status}}</td>
+            <td>
+              <button class="editBtn"><i class="fa fa-edit"></i></button>&nbsp;
+              <button class="deleteBtn"><img src="../../assets/Images/Vector.png" alt=""></button>
+            </td>
+  
+          </tr>
+  
+        </tbody>
+      </table>
+      <div class="paginationdiv">
+        <pagination-controls class="custompaginationsettings" (pageChange)="p = $event" previousLabel=""
+        nextLabel=""> 
+
+        </pagination-controls>
+    </div>
+    </div>
+  
+  </div>

@@ -1,0 +1,62 @@
+<div class="grid-container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <span class="heading">Promocodes</span>
+  
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+        <button class="addBtn">Add New Code</button>
+      </div>
+  
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-8">
+            <button class="mainbuttons">All</button>
+            <button class="mainbuttons">Super Admin</button>
+            <button class="mainbuttons">Admin</button>
+            <button class="mainbuttons">Accountant</button>
+            <button class="mainbuttons">Service Manager</button>
+            <button class="mainbuttons"> Editor</button>
+        </div>
+        <div class="col-md-4">
+            <input class="form-control searchPromo" placeholder="Search from the list" type="text" [(ngModel)]="term">
+
+        </div>
+
+    </div>
+    <br>
+    <div class="table-responsive-lg table-responsive-sm table-responsive-md">
+      <table class="table">
+        <thead>
+          <tr>
+              <th>No</th>
+            <th>Name</th>
+            <th>Email Address</th>
+            <th>Phone.No</th>
+            <th>Country</th>
+            <th>User Role</th>
+            <th>Action</th>
+          </tr>
+  
+        </thead>
+        <tbody>
+          <tr *ngFor="let promo of promos |filter:term">
+            <td>{{promo.No}}</td>
+            <td>{{promo.Name}}</td>
+            <td>{{promo.Email}}</td>
+            <td>{{promo.PhoneNo}}</td>
+            <td>{{promo.Country}}</td>
+            <td>{{promo.UserRole}}</td>
+            <td>
+              <button class="editBtn"><i class="fa fa-edit"></i></button>&nbsp;
+              <button class="deleteBtn"><img src="../../assets/Images/Vector.png" alt=""></button>
+            </td>
+  
+          </tr>
+  
+        </tbody>
+      </table>
+    </div>
+  
+  </div>

@@ -1,0 +1,55 @@
+
+    <div class="gridcontainer">
+        <div class="formheadlabel">
+            <span>
+                WithDraw options
+            </span>
+        </div>
+        <br>
+        <div class="formdiv">
+            <form action="">
+                <div class="row">
+                    <label class="formlabels" for="">Profile Picture*</label>
+                    <div class="col-md-5 col-lg-5 col-sm-5 col-5">
+                        <img class="upImage" src={{url}} (error)="onImgError($event)" alt="">&nbsp;
+                        <input class="imageUpBtn" (change)="onFileChanged($event)" type="file">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Field Method*</label>
+                        <input class="form-control" type="text" placeholder="Bank Transfer">
+        
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Field Name*</label>
+                        <input class="form-control" type="text" placeholder="Enter field name">
+        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Field Name*</label>
+                        <input class="form-control" type="text"  placeholder="Enter field name">
+        
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Field Name*</label>
+                        <input class="form-control" type="text"  placeholder="Enter field name">
+        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                        <button class="saveChangesBtn">Save Changes</button>
+                    </div>
+                </div>
+        
+            </form>
+        </div>
+    </div>
+    
+

@@ -1,0 +1,17 @@
+.grid-container {
+    width: 1572px;
+    height: 1510px;
+    left: 298px;
+    top: 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px -5px rgb(0 0 0 / 10%);
+}
+.form-control:disabled {
+    background-color: #F9F9F9;
+    border:0px;
+}
+
+.form-control {
+border: 1px solid #ECECEC;
+border-radius: 5px;
+}

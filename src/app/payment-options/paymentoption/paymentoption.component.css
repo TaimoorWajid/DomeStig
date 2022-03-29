@@ -1,0 +1,15 @@
+select{
+    width: 156px;
+    height: 49px;
+}
+
+.saveChangesBtn{
+    float: right;
+}
+
+.form-control {
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

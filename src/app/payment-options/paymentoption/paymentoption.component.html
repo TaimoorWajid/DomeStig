@@ -1,0 +1,71 @@
+
+    <div class="gridcontainer">
+        <div class="formheadlabel">
+            <span>
+                Payment option
+            </span>
+        </div>
+        <br>
+        <div class="formdiv">
+            <form action="">
+                <div class="row">
+                    <label class="formlabels" for="">Icon*</label>
+                    <div class="col-md-5 col-lg-5 col-sm-5 col-5">
+                        <img class="upImage" src={{url}} (error)="onImgError($event)" alt="">&nbsp;
+                        <input class="imageUpBtn" (change)="onFileChanged($event)" type="file">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                        <label class="formlabels" for="">Mode*</label>
+                        <br>
+                        <select class="form-control">
+                            <option value="">Test</option>
+                            <option value="">Live</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-3 col-3">
+                        <label class="formlabels" for="">Field Name*</label>
+                        <br>
+                        <select class="form-control" >
+                            <option value="">Active </option>
+                            <option value="">InActive</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Test Key*</label>
+                        <input class="form-control" type="text" placeholder="Enter your key">
+        
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Test Serert Key*</label>
+                        <input class="form-control" type="text" placeholder="Enter your key">
+        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Public Key*</label>
+                        <input class="form-control" type="text" placeholder="Enter your key">
+        
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-6">
+                        <label class="formlabels" for="">Public Serert Key*</label>
+                        <input class="form-control" type="text" placeholder="Enter your key">
+        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 col-sm-12">
+                        <button class="saveChangesBtn">Save Changes</button>
+                    </div>
+                </div>
+        
+            </form>
+        </div>
+    </div>
+    
+

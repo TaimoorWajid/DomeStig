@@ -1,0 +1,12 @@
+#flexSwitchCheckDefault:checked{
+    background-color: #61963a;
+    text-decoration: none;
+    border-color: #61963a;
+    box-shadow: none;
+}
+#flexSwitchCheckDefault{
+    background-color: #fff;
+    text-decoration: none;
+    border-color: #61963a;
+    box-shadow: none;
+}

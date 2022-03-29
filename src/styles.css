@@ -1,0 +1,151 @@
+.grid-container{
+    margin: 30px;
+    padding: 30px;  
+    border-radius: 10px;
+}
+.mat-body, .mat-body-1, .mat-typography {
+  font-family: 'Poppins';
+  font-style: normal;
+
+}
+
+input{
+  height: 49px;
+}
+
+
+.heading{
+font-family:'Poppins';
+font-weight: bolder;
+font-size: 30px;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: left;
+color: #222222;
+left: 298px;
+margin-bottom: 15px;
+
+
+}
+
+table{
+    border:1px solid #f1f1f1;
+    background-color: #ffffff;
+  }
+
+  .saveChangesBtn{
+    height: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration:dashed;
+    border:1px solid #959595;
+    background-color: #61963a;
+    color: white;
+    margin-left: 5px;
+    padding-right:20px;
+    padding-left: 20px;
+    border-radius: 3px;
+  }
+
+  .upImage{
+    width: 90px;
+    height: 90px;
+    top: 603px;
+    justify-content: center;
+    border-radius: 70%;
+}
+.imageUpBtn::-webkit-file-upload-button {
+  background: #61963a;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 2px;
+}
+
+.saveChangesBtn{
+  height: 40px;
+  width: auto;
+  text-align: center;
+  text-decoration:dashed;
+  border:1px solid #959595;
+  background-color: #61963a;
+  color: white;
+  margin-left: 5px;
+  padding-right:20px;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+
+.formlabels{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+  font-style: normal;
+  color: #444444;
+  font-family: 'Poppins';
+}
+
+
+.gridcontainer{
+  margin: 30px;
+  background-color: white;
+}
+
+.formheadlabel{
+  background-color: #61963A;
+  height: 68px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+.formheadlabel span{
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+}
+.formdiv{
+  padding: 20px;
+}
+.addBtn{
+  float:right;
+  height: 30px;
+  width: auto;
+  text-align: center;
+  background-color: #61963a  ;
+  text-decoration: none;
+  border:none;
+  color: white;
+  padding-right:20px;
+  padding-left: 20px;
+  
+}
+.editBtn{
+  height: 25px;
+  width: 40px;
+  text-align: center;
+  background-color: #61963a  ;
+  text-decoration: none;
+  border:none;
+  color: white;
+}
+
+.deleteBtn{
+  height: 25px;
+  width: 40px;
+  text-align: center;
+  background-color: f4f8f1;
+  text-decoration: none;
+  border:none;
+  color: #b7bab5;
+  margin-left: 2px;
+}
+
+.paginationdiv{
+  float: right;
+}
+.custompaginationsettings /deep/ .ngx-pagination .current{
+  background: #61963a;
+
+}
+

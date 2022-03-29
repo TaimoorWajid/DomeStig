@@ -1,0 +1,215 @@
+
+.filterBtn{
+  float: right;
+  height: 35px;
+  border: 1px solid #959595 ;
+  margin-left: 2px;
+  width: auto;
+  padding-left: 10px;
+  padding-right:10px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}  
+
+
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins';
+}
+
+/* Float four columns side by side */
+.column {
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+.column {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+}
+
+/* Style the counter cards */
+.card {
+
+padding: 25px;
+height: 140px;
+left: 0px;
+top: 0px;
+margin-bottom: 25px;
+
+/* Wireframe colors/WF- White */
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+border: 0px!important;
+}
+
+img{
+height:90px ;
+width: 90px;
+top:49 ;
+left:444px ;
+}
+
+.itemsinCard{
+height: 90px;
+width: 300px;
+
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main body text */
+
+color: #666666;
+}
+label{
+font-family: 'Poppins' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+width: 210px;
+height: 27px;
+color:#666666;
+padding-bottom: 10px!important;
+}
+.amount{
+width: 200px;
+height: 39px;
+color: black;
+font-family: 'Poppins' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 69px;
+}
+
+.cardImg {
+
+width: 90px;
+height: 90px;
+left: 25px;
+top: 25px;
+
+/* Main color 1 */
+border-radius: 5px;
+}
+
+.cardText {
+
+margin-top: 7px;
+margin-left: 20px;
+margin-bottom: 10px;
+
+}
+
+.cardrow{
+
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+grid-gap: 0.5rem;
+align-items: start;
+
+/* Style the counter cards */
+/* .card {
+
+
+padding: 25px;
+height: 140px;
+left: 0px;
+top: 0px;
+
+/* Wireframe colors/WF- White 
+
+background: #FFFFFF;
+box-shadow: 0px 4px 10px -5px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+border: 0px!important;
+}
+
+
+.itemsinCard{
+  height: 90px;
+  width: 300px;
+  
+
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  
+  
+  /* Main body text 
+  
+  color: #666666;
+}
+label{
+font-family: 'Poppins' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+width: 210px;
+height: 27px;
+color:#666666;
+padding-bottom: 10px!important;
+}
+.amount{
+  width: 200px;
+height: 39px;
+color: black;
+font-family: 'Poppins' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 69px;
+}
+
+.cardImg {
+  
+  width: 90px;
+  height: 90px;
+  left: 25px;
+  top: 25px;
+  
+  /* Main color 1 
+  border-radius: 5px;
+}
+.cardText {
+  
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  
+  } */
+}
